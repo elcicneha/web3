@@ -332,7 +332,9 @@ span{
         font-weight: 400;
         font-size: 3rem;
     }
-
+    .fullname{
+        width: 100%;
+    }
     .signup-pre-heading {
         font-size: 2rem;
         font-weight: 200;
