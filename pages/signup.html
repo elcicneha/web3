@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +13,125 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Web3 World Championship</title>
 </head>
+
 <body>
-    
+    <div class="nav">
+        <div class="logo">
+            <a href="index.html"><img src="../resources/images/w3wc-logo-white.png" alt="" class="logoimg"></a>
+        </div>
+        <div class="links">
+            <a href="index.html" class="nav-link">Tracks</a>
+            <a href="index.html" class="nav-link">Prizes</a>
+            <a href="#index.html" class="nav-link">Opportunities</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="signup.html"><button type="submit" class="border-button">Sign Up</button></a>
+        </div>
+    </div>
+    <div class="mobile-navbar" id="navbar">
+        <div class="logo noshow">
+            <a href="index.html"><img src="../resources/images/w3wc-logo-white.png" alt="" class="logoimg"></a>
+            <button class="hamburger" onclick="mobileopen()"><i class="ri-menu-line"></i></button>
+            <button class="hamburger-close noshow" onclick="mobileclose()"><i class="ri-close-fill"></i></button>
+        </div>
+
+        <ul class="links noshow">
+            <li><a href="#tracks" class="nav-link" onclick="mobileclose()">Tracks</a></li>
+            <li><a href="#prizes" class="nav-link" onclick="mobileclose()">Prizes</a></li>
+            <li><a href="#oppurtunities" class="nav-link" onclick="mobileclose()">Opportunities</a></li>
+            <li><a href="about.html" class="nav-link" onclick="mobileclose()">About</a></li>
+            <li><a href="signup.html"><button type="submit" class="border-button" onclick="mobileclose()">Sign
+                        Up</button></a></li>
+            <ul>
+    </div>
+
+    <div class="hero-signup">
+        <div class="thankyou-container">
+            <h1 class="thankyou">Thank you for registering.</h1>
+            <p class="thankyou">You will recieve an email shortly.</p>
+        </div>
+        <div class="signup-container">
+
+            <h3 class="signup-pre-heading">First 500 Sign ups
+            </h3>
+            <h1 class="signup-main-heading">win unique nfts</h1>
+            <p class="signup-subheading">Sign up now to win a Unique NFT</p>
+            <form method="POST"
+                action="https://script.google.com/macros/s/AKfycbxmhwUgDGxVrwQhIa9QW-9uDSuZYEPL4ITB7NqA8Xy-fPA2J_BboUKCD7b0vcho8eCZ/exec"
+                onsubmit="thankyou()" class="signup">
+                <div class="container">
+                    <div class="fullname">
+                        <div class="inputfield">
+                            <span>*First Name</span>
+                            <input type="text" class="firstname" name="First Name" required="true">
+                        </div>
+                        <div class="inputfield">
+                            <span>*Last Name</span>
+                            <input type="text" class="lastname" name="Last Name" required="true">
+                        </div>
+
+                    </div>
+                    <div class="inputfield">
+                        <span>*Email</span><input type="email" name="Email" id="" class="email" required="true">
+                    </div>
+
+                    <button type="submit" onclick="thankyou()" class="sign">
+                        Sign Up
+                    </button>
+                </div>
+
+            </form>
+        </div>
+
+
+    </div>
+
+
+    <footer>
+        <div class="social-icons">
+            <a href="" target="_blank"><i class="ri-instagram-line"></i></a>
+            <a href="" target="_blank"><i class="ri-twitter-fill"></i></a>
+            <a href="" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+        </div>
+        <p class="madeby">Designed by <a href="elcicneha.com">Elcicneha</a></p>
+    </footer>
+    <script>
+        navbar = document.getElementById("navbar");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+
+                navbar.style.display = "none";
+            } else {
+
+                navbar.style.display = "block";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+        function mobileopen() {
+            $('.hamburger').addClass('noshow');
+            $('.hamburger-close').removeClass('noshow');
+            $('.mobile-navbar').addClass('fullheight');
+            $('.mobile-navbar').addClass('color');
+            $('ul').removeClass('noshow');
+            $('ul').addClass('show');
+        }
+        function mobileclose() {
+            $('.hamburger').removeClass('noshow');
+            $('.hamburger-close').addClass('noshow');
+            $('ul').removeClass('show');
+            $('ul').addClass('noshow');
+            $('.mobile-navbar').removeClass('fullheight');
+            $('.mobile-navbar').removeClass('color');
+        }
+    </script>
 </body>
+
 </html>
