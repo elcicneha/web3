@@ -352,6 +352,7 @@ span{
     .signup-container {
         margin-top: -3rem;
         width: 100%;
+        padding: 0 2rem;
     }
     .thankyou-container {
     font-family: 'Poppins',sans-serif;
