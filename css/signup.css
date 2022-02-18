@@ -336,6 +336,9 @@ span{
         font-size: 2rem;
         font-weight: 200;
     }
+    .signup .fullname{
+        width: 100%;
+    }
     .thankyou-container {
     font-family: 'Poppins',sans-serif;
     padding: 8rem 5rem;
