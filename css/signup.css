@@ -329,9 +329,9 @@ span{
 }
 
 @media screen and (max-width: 420px) {
-    input{
-        padding: 0;
-    }
+   .container{
+       width: 80%;
+   }
     .signup-main-heading {
         font-weight: 400;
         font-size: 3rem;
