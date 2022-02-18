@@ -332,8 +332,8 @@ span{
         font-weight: 400;
         font-size: 3rem;
     }
-    .signup .fullname{
-        width: 100%;
+    .inputfield{
+        width: 80%;
     }
     .signup-pre-heading {
         font-size: 2rem;
